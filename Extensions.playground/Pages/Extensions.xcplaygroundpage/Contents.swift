@@ -27,11 +27,13 @@
 //: ## Extension Syntax
 //:
 //: Declare extensions with the extension keyword:
+class SomeType {}
 extension SomeType {
     // new functionality to add to SomeType goes here
 }
-An extension can extend an existing type to make it adopt one or more protocols. To add protocol conformance, you write the protocol names the same way as you write them for a class or structure:
-
+//: An extension can extend an existing type to make it adopt one or more protocols. To add protocol conformance, you write the protocol names the same way as you write them for a class or structure:
+protocol SomeProtocol {}
+protocol AnotherProtocol {}
 extension SomeType: SomeProtocol, AnotherProtocol {
     // implementation of protocol requirements goes here
 }
